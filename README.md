@@ -24,10 +24,6 @@ Aufgaben zu jedem Thema sind im Ordner Material zu finden.
     * Wurzelfunktionen
     * Logarithmusfunktionen
 
-* ### __Trigonometrie__
-    * sinus, cosinus, tangens
-    * Grad und Bogenmaß
-
 * ### __Potenzen und Logarithmen__
     * Potenzgesetze
     * Logarithmus und natürlicher Logarithmus
