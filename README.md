@@ -1,5 +1,6 @@
 # Mathe Übungsaufgaben und Zusammenfassungen
 ## Inhalt
+* [Anleitung](#ANLEITUNG.md) zur Nutzung des Materials
 * [Übersicht](#übersicht)
 * [Themen](#themen)
 * [Nützliche Links](#nützliche-links)
