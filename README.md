@@ -36,6 +36,7 @@ Aufgaben zu jedem Thema sind im Ordner Material zu finden.
 * ### __Ableitungsregeln__
     * [Mathebibel](https://www.mathebibel.de/ableitungsregeln#potenzregel), 9 Standardregeln
     * [Matheguru](https://matheguru.com/differentialrechnung/ableitungsregeln.html), fortgeschrittene Regeln
+    
 
 * ### __Kurvendiskussion__
     * [Wikipedia](https://de.wikipedia.org/wiki/Kurvendiskussion)

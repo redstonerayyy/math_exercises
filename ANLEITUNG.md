@@ -1,1 +1,2 @@
-adsasdf
+# Erklärung zur Nutzung
+In den Ordnern __material__ und __überbungsaufgaben__ sind Aufgaben, Zusammenfassungen und weiteres Material zum lernen. Die Ordner __latexbuild__, __src__ sowie die __anderen Dateien__ sind irrelevant für Lernende.
