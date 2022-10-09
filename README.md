@@ -36,6 +36,7 @@ Aufgaben zu jedem Thema sind im Ordner Material zu finden.
 
 * ### __Kurvendiskussion__
     * [Wikipedia](https://de.wikipedia.org/wiki/Kurvendiskussion)
+    * [Übersicht](https://de.wikipedia.org/wiki/Kurvendiskussion#%C3%9Cbersicht_%C3%BCber_Kriterien)
     * [Studyflix](https://studyflix.de/mathematik/kurvendiskussion-3076)
     * [Mathebibel](https://www.mathebibel.de/kurvendiskussion)
 
