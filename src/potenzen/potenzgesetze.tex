@@ -1,0 +1,47 @@
+\documentclass[10pt,a4paper]{article}
+
+\begin{document}
+
+% Remove Indentation
+\setlength{\parindent}{0cm}
+
+\title{Potenzgesetze}
+
+%redefine maketitle  to make the title it bigger
+\makeatletter
+\def\@maketitle{%
+  \newpage
+  \null
+  \vskip 2em%
+  \begin{center}%
+  \let \footnote \thanks
+    {\Huge\bfseries\@title \par}%
+    \vskip 1.5em%
+    {\large
+      \lineskip .5em%
+      \begin{tabular}[t]{c}%
+        \@author
+      \end{tabular}\par}%
+    \vskip 1em%
+    {\large \@date}%
+  \end{center}%
+  \par
+  \vskip 1.5em}
+\makeatother
+
+\author{}
+\date{}
+
+\maketitle
+
+\section*{Was ist eine Potenz}
+Die Potenz $x^n$ beschreibt, dass die Zahl $x$ $n-1$ mal mit sich 
+selbst multipliziert wird. Für $x^3$ ist also auch diese Schreibweise möglich:
+
+$x \cdot x \cdot x$
+
+Die Potenzgesetze beschreiben dabei, wie sich mit Potenzen einfacher rechnen lässt,
+und wie Terme zusammengefasst und vereinfacht werden können zur Umformung.
+
+
+\end{document}
