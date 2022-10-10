@@ -12,14 +12,18 @@ random.seed(now)
 def gen_number(min, max):
     # use decimal module to prevent floating point errors
     # so 0.1 is not displayed as 0.0.99999999999998
-    return random.randrange(min, max + 1) + round(D(random.random()), 1)
+    num = random.randrange(min, max + 1) + round(D(random.random()), 1)
+    return  num 
 
 # generate exponential factor and exponential
 def gen_exponential(exp, f1, f2):
-    factor = gen_number(f1, f2)
+    factor = 0
+    while factor in [0]:
+        factor = gen_number(f1, f2)
+
     exponential = exp if exp or exp == 0 else random.randint(1, 5)
 
-    return factor, exponential
+    return [factor, exponential]
 
 """
 f(x) = a(n)x^k + a(n-1)x^k-1 ... a(1)x + a(0)  
@@ -43,7 +47,12 @@ def gen_function(degree, amin=-2, amax=3):
         if parts[index]:
             exponentfunctions.append(gen_exponential(index, amin, amax))
 
-    # exponentfunctions = exponentfunctions[::-1] # reverse, because polynom is reverse
+    # convert to int if it is int
+    for func in exponentfunctions:
+        if float(func[0]).is_integer():
+            func[0] = int(func[0])
+        if float(func[1]).is_integer():
+            func[1] = int(func[1])
 
     # generate an output string
     funcstring = ""
@@ -56,7 +65,10 @@ def gen_function(degree, amin=-2, amax=3):
     for func in exponentfunctions[::1]:
         if funcstring:
             funcstring = " + " + funcstring
-        funcstring = f"{func[0]}x^{func[1]}" + funcstring
+        if func[0] in [1]:
+            funcstring = f"x^{func[1]}" + funcstring
+        else:
+            funcstring = f"{func[0]}x^{func[1]}" + funcstring
 
     return funcstring
 
