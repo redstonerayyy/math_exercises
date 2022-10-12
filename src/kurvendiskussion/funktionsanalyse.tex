@@ -1,0 +1,92 @@
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[margin={2in, 0.5in}]{geometry}
+\usepackage[]{graphicx,amsmath,array,relsize}
+
+\begin{document}
+
+% Remove Indentation
+\setlength{\parindent}{0cm}
+
+\title{Analyse von Funktionen}
+
+%redefine maketitle  to make the title it bigger
+\makeatletter
+\def\@maketitle{%
+  \newpage
+  \null
+  \vskip 2em%
+  \begin{center}%
+  \let \footnote \thanks
+    {\Huge\bfseries\@title \par}%
+    \vskip 1.5em%
+    {\large
+      \lineskip .5em%
+      \begin{tabular}[t]{c}%
+        \@author
+      \end{tabular}\par}%
+    \vskip 1em%
+    {\large \@date}%
+  \end{center}%
+  \par
+  \vskip 1.5em}
+\makeatother
+
+\author{}
+\date{}
+
+\maketitle
+
+\section*{Generell}
+
+Eine Funktion kann vielfältig analysiert werden. Vorraussetzung sind dabei die Ableitungen
+bis einschließlich der 3. Ableitung.
+
+\section*{Nullstellen}
+Die Nullstellen der Ursprungsfunktion können in mehreren Verfahren oder Kombination dieser bestimmt werden. Diese sind
+\begin{itemize}
+	\item Umformung(z. B. Ausklammern)
+	\item pq-Formel
+	\item Taschenrechner(solve)
+	\item Polynomdivision(nicht behandelt)
+\end{itemize}
+
+Da die Umformung schwer einzugrenzen ist und die Lösung mit dem Taschenrechner einfach, wird nur die pq-Formel betrachtet.
+
+Die pq-Formel lässt sich nur auf Quadratische Funktionen bzw. Funktionen des 2. Grades anwenden.
+Dabei muss der Vorfaktor $a$ aus der Normalform $ax^2 + bx + c$ 1 sein.
+$b$ wird im Folgenden als $p$ bezeichnet, $c$ als $q$.
+
+Die pq-Formel lautet: \newline
+
+$\mathlarger{x_{1,2} = -\frac{p}{2} \pm \sqrt[]{(\frac{p}{2})^2 - q}}$
+
+Das Einsetzen ergibt in die Formel ergibt dann die Nullstellen der Funktion.
+
+\section*{y-Achsenabschnitt}
+
+\section*{Extrempunkte}
+
+\section*{Wendepunkte}
+
+\section*{Symmetrie}
+
+\section*{Funktionsgraph}
+
+\section*{Verhalten im Unendlichen}
+
+\section*{Definitionsbereich}
+
+\section*{Wertebereich}
+
+\section*{Monotonie}
+
+\section*{Monotonie}
+
+\section*{Krümmung}
+
+\section*{Tangengleichung}
+
+\section*{Normalengleichung}
+
+\end{document}
