@@ -1,0 +1,64 @@
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[margin={2in, 0.5in}]{geometry}
+\usepackage[]{graphicx,amsmath,array}
+
+\begin{document}
+
+% Remove Indentation
+\setlength{\parindent}{0cm}
+
+\title{Funktionsscharen}
+
+%redefine maketitle  to make the title it bigger
+\makeatletter
+\def\@maketitle{%
+  \newpage
+  \null
+  \vskip 2em%
+  \begin{center}%
+  \let \footnote \thanks
+    {\Huge\bfseries\@title \par}%
+    \vskip 1.5em%
+    {\large
+      \lineskip .5em%
+      \begin{tabular}[t]{c}%
+        \@author
+      \end{tabular}\par}%
+    \vskip 1em%
+    {\large \@date}%
+  \end{center}%
+  \par
+  \vskip 1.5em}
+\makeatother
+
+\author{}
+\date{}
+
+\maketitle
+
+\section*{Funktionsscharen}
+
+Ein Funktionsschar ist eine Menge von Funktionen, die aus einer Funktion durch veränderung
+eines Parameters geschieht, dem Scharparameter, auch k genannt.
+
+Es lässt sich nun allgemein Untersuchen, wo die signifikaten Stellen des Graphen in Abhängigkeit
+von k liegen.
+
+Wenn man nun Beispielhaft die Funktion $f(x) = k \cdot x^3 - 2x^2$ nimmt mit dem Scharparameter k.
+
+$f_{k}(x) = k \cdot x^3 - 2x^2$
+
+$f'_{k}(x) = k \cdot 3x^2 - 4x^1$
+
+$f''_{k}(x) = k \cdot 6^1 - 4$
+
+Setzt man nun die 1. Ableitung mit 0 gleich, so erhält man die Nullstellen $x = 0$ und $x = \frac{4}{3k}$.
+Die 2. Nullstelle lässt sich nun nach $k$ umformen, sodass man $k = \frac{4 - x}{3}$ erhält.
+
+Um die Extrempunkte zu erhalten setzt man nun k in die Funktion für den x-Wert ein
+und anschließend in die Ursprungsfunktion.
+
+$EP(\frac{4}{3k}|f_{k}(\frac{4 - \frac{4}{3k}}{3}))$
+
+\end{document}
