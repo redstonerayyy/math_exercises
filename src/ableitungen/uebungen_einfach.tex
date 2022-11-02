@@ -1,0 +1,64 @@
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[margin={2in, 0.5in}]{geometry}
+\usepackage[]{graphicx,amsmath,amsfonts,array}
+
+% Remove Indentation
+\setlength{\parindent}{0cm}
+
+\begin{document}
+	
+\title{Übungsaufgaben zu Ableitungsregel, AB1}
+
+%redefine maketitle  to make the title it bigger
+\makeatletter
+\def\@maketitle{%
+  \newpage
+  \null
+  \vskip 2em%
+  \begin{center}%
+  \let \footnote \thanks
+    {\Huge\bfseries\@title \par}%
+    \vskip 1.5em%
+    {\large
+      \lineskip .5em%
+      \begin{tabular}[t]{c}%
+        \@author
+      \end{tabular}\par}%
+    \vskip 1em%
+    {\large \@date}%
+  \end{center}%
+  \par
+  \vskip 1.5em}
+\makeatother
+
+\author{}
+\date{}
+
+\maketitle
+
+\section*{Ableitungsregel: Konstantenregel}
+Die Ableitung einer Konstanten ist immer Null, da sie irrelevant für die Steigung
+der Funktion ist und nur wichtig, wenn es um den Entgültigen y-Wert geht.
+
+Somit ist $f'(x) = 0$ die 1. Ableitung von $f(x) = 5$, da jede Konstante null wird.
+Dies gilt für jede Konstante $C$ wo $C  \in \mathbb{R}$, also wo $C$ eine reelle Zahl ist.
+
+\section*{Ableitungsregel: Ableitung von x}
+Die Ableitung von $x$ is $1$. Dies lässt sich so begründen, dass $f(x) = x = 1x$
+eine Lineare Funktion mit der Steigung $m = 1$ ist, was dazu führt, dass die Steigung dieser
+Funktion $1$ ist und somit auch $x$ in der Ableitungsfunktion mit $1$ dargestellt werden muss.
+
+\section*{Aufgaben zu Ableitungsregeln}
+Bilden sie die 1. Ableitung der Funktionen. \newline
+Setzt Wissen zur Ableitung von Konstanten und von x voraus. \newline
+
+\begin{tabular}{l l l}
+
+	a) $f(x) = 5$        & b) $f(x) = x$        & c) $f(x) = 2x + 4$ \\
+	d) $f(x) = 3x + 0$   & e) $f(x) = 1x + 5$   & f) $f(x) = 20x + 100$ \\
+	g) $f(x) = 2*2x + 2$ & h) $f(x) = 0.5x + 0$ & i) $f(x) = 0x + 5$
+
+\end{tabular}
+
+\end{document}
