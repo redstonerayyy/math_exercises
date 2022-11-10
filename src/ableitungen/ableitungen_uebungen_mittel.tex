@@ -1,0 +1,98 @@
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[margin={2in, 0.5in}]{geometry}
+\usepackage[]{graphicx,amsmath,amsfonts,array}
+
+% Remove Indentation
+\setlength{\parindent}{0cm}
+
+\begin{document}
+	
+\title{Übungsaufgaben zu Ableitungsregeln, AB2}
+
+%redefine maketitle  to make the title it bigger
+\makeatletter
+\def\@maketitle{%
+  \newpage
+  \null
+  \vskip 2em%
+  \begin{center}%
+  \let \footnote \thanks
+    {\Huge\bfseries\@title \par}%
+    \vskip 1.5em%
+    {\large
+      \lineskip .5em%
+      \begin{tabular}[t]{c}%
+        \@author
+      \end{tabular}\par}%
+    \vskip 1em%
+    {\large \@date}%
+  \end{center}%
+  \par
+  \vskip 1.5em}
+\makeatother
+
+\author{}
+\date{}
+
+\maketitle
+
+\section*{Potenzregel}
+Die wichtigste Ableitungsregel ist wohl die Potenzregel. Sie erlaubt es,
+Potenzfunktionen abzuleiten wie z. B. $f(x) = x^2$.
+Die formale Regel ist dabei $f(x) = x^n \rightarrow f'(x) = n \cdot x^{n-1}$.
+Diese gilt sowohl für positive als auch negative Exponenten.
+
+Beispiele für Ableitungen nach dieser Regel sind:
+
+$f(x) = x^3 \rightarrow f'(x) = 3 \cdot x^{3-1} = 3x^2$
+
+$f(x) = x^{-3} \rightarrow f'(x) = -3 \cdot x^{-3-1} = -3x^{-4}$
+
+\section*{Summen- und Differenzregel}
+Diese Regeln beschreibt, wie man Terme behandelt, die mit $+$ oder $-$ mit
+verbunden sind.
+
+Bei Plus und Minus, also bei $f(x) = x^2 + x^3$ oder $f(x) = x^2 - x^3$
+lassen sich die Terme $x^2$ und $x^3$ als eigene Funktionen verstehen, die man einzeln
+ableitet und dann wieder mit dem jeweiligen Rechenzeichen verbindet.
+
+Für $f(x) = x^2 + x^3$ ist die Ableitung $f'(x) = 2x + 3x^2$, 
+
+da $x^2 \rightarrow 2x$ und $x^3 \rightarrow 3x^2$.
+
+Diese beiden Ableitungen der individuellen Funktionen, die die Gesamtfunktion
+ausmachen, müssen nun nur noch mit dem Rechenzeichen verbunden werden.
+
+Somit also auch $f(x) = x^2 - x^3 \rightarrow 2x - 3x^2$
+
+\section*{Faktorregel}
+Diese Regel beschreibt, das Faktoren vor einer Potenzfunktion, die man ableitet, erhalten bleiben.
+Die Potenzfunktion $f(x) = 2x^2$ setzt sich aus dem Faktor $2$ und der Funktion $x^2$ zusammen.
+Allgemein ließe sich dies auch als $f(x) = c \cdot g(x)$ beschreiben, wo $g(x)$ nun die Funktion ist,
+und c der Faktor.
+Bei der Ableitung der Funktion $f(x)$ bleibt der Faktor $c$ unverändert, sodass
+$f'(x) = 2 \cdot 2x$.
+Allgemein also $f'(x) = c \cdot g'(x)$ 
+
+\section*{Aufgaben zu Ableitungsregeln}
+Bilden sie die 1. und 2. Ableitung der Funktionen. \newline
+
+Beispiel:
+
+$f(x) = 2x^3$
+
+$f'(x) = 6x^2$ 
+
+$f''(x) = 12x$
+\newline
+
+\begin{tabular}{l l l}
+
+	a) $f(x) = x^4$             & b) $f(x) = 2x^2$        & c) $f(x) = x^5 + 2$ \\
+	d) $f(x) = 3x^3 + 2x^2 + 1$ & e) $f(x) = 1x^2 + x$    & f) $f(x) = 20x^2$ \\
+	g) $f(x) = 2x^1 + 2$        & h) $f(x) = 0.5x^2 + 2x$ & i) $f(x) = 0x^3 + x^2$
+
+\end{tabular}
+
+\end{document}
