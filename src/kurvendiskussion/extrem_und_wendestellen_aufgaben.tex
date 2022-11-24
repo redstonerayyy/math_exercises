@@ -1,0 +1,90 @@
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[margin={1.5in, 0.5in}]{geometry}
+\usepackage[]{graphicx,amsmath,amsfonts,array}
+
+% Remove Indentation
+\setlength{\parindent}{0cm}
+
+\begin{document}
+	
+\title{Übungsaufgaben zu Extremstellen und Wendepunkten (1)}
+
+%redefine maketitle  to make the title it bigger
+\makeatletter
+\def\@maketitle{%
+  \newpage
+  \null
+  \vskip 2em%
+  \begin{center}%
+	\let \footnote \thanks
+    {\Huge\bfseries\@title \par}%
+    \vskip 1.5em%
+    {\large
+	\lineskip .5em%
+	\begin{tabular}[t]{c}%
+        \@author
+      \end{tabular}\par}%
+    \vskip 1em%
+    {\large \@date}%
+  \end{center}%
+  \par
+  \vskip 1.5em}
+\makeatother
+
+\author{}
+\date{}
+
+\maketitle
+
+\section*{Bestimmen von Extremstellen}
+Die Extremstellen eines Graphen sind die höchsten oder niedrigsten Punkte des Graphen.
+Dabei unterscheided man zwischen lokalen und globalen Minima und Maxima. Global bedeutet,
+dass es auf den ganzen Graphen der höchste oder tiefste Punkt ist, lokal, das es nur in einem Bereich
+der höchste oder tiefste Punkt ist.
+\newline
+
+Die Extremstellen einer Funktion $f(x)$ sind an den Stellen, wo $f'(x) = 0$ gilt, also wo
+die Ursprungsfunktion keine Steigung hat. Außerdem gibt die 2. Ableitung, wenn man sie mit Null
+gleichgesetzt, also $f''(x) = 0$, aufschluss darüber, ob es ein Hoch- oder Tiefpunkt ist.
+Ist der Wert der 2. Ableitung an der Stelle x größer als $0$, so liegt ein Tiefpunkt vor, ist der Wert kleiner
+als $0$, dann ist es ein Hochpunkt.
+\newline
+
+Somit lässt sich festhalten, dass die zur Berechnung der Extremstellen die 1. Ableitung der Funktion
+mit $0$ gleichgesetzt werden muss. An den Stellen wo nun $f'(x) = 0$ ist, muss nun x in die 2. Ableitung
+eingesetzt werden, um zu prüfen, ob es ein Hoch- oder Tiefpunkt ist.
+Zum Schluss können noch durch Einsetzen in die Ursprungsfunktion die tatsächlichen Punkte
+berechnet werden.
+\newline
+
+1. Ableitung gleich Null setzen: $f'(x) = 0$
+
+In 2. Ableitung einsetzen: $f''(x) > 0$ oder $f''(x) < 0$
+
+Punkte berechen: $E( x | f(x) )$
+
+\section*{Bestimmen von Wendepunkten}
+Die Wendepunkte bei einem Graphen sind die Punkte, wo der Graph sein Krümmungsverhalten ändert.
+Voraussetzung dafür ist, dass die 2. Ableitung an diesem Punkt gleich $0$ ist und die 3. Ableitung ungleich $0$.
+\newline
+
+Für einen Wendepunkt gilt also:
+
+$f''(x) = 0$
+$f'''(x) \neq 0$
+\newline
+
+Zur Bestimmung der Wendestellen müssen nun zunächst die Ableitungen gebildet werden und
+die 2. Ableitung wird mit 0 gleichgesetzt. Anschließend überprüft man dann mit der 3. Ableitung,
+ob es ein Wendepunkt ist.
+
+\section*{Aufgaben zu Extremstellen und Wendepunkten}
+
+\begin{tabular}{l l l}
+
+	a) $f(x) = x^3 -3x + 2$        & b) $f(x) = x^3 + 3x + 1$  & c) $f(x) = 2x^3 + 1x - 2$ \\
+	d) $f(x) = \frac{1}{3}x^3 + 5$ & e) $f(x) = 4x^2 + 3x + 1$ & f) $f(x) = 0.5x^3 + 1.5x + 1.5$
+\end{tabular}
+
+\end{document}
